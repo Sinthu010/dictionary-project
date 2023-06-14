@@ -8,10 +8,6 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <img src={logo2} className="App-logo" alt="logo" />
-        <a href="#" className="btn btn-primary shadow">
-          {" "}
-          Back to Top{" "}
-        </a>
       </header>
     </div>
   );
