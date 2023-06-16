@@ -1,8 +1,14 @@
-.App-header {
+.header {
   margin: 20px 0;
 }
-.App-logo {
+.logo {
   max-width: 400px;
   display: block;
   margin: 0 auto;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+  margin: 30px 0;
 }
