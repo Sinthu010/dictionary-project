@@ -1,4 +1,3 @@
-import logo from "./coding-cartoon.jpeg";
 import logo2 from "./coding-cartoon2.jpeg";
 import "./App.css";
 import Dictionary from "./Dictionary";
