@@ -1,7 +1,12 @@
 export default function Synonyms(props) {
   if (props.synonyms) {
     const synonymList = props.synonyms.join(", ");
-    return `Synonyms: ${synonymList}`;
+    return (
+      <div>
+        <br></br>
+        Synonyms: {synonymList}
+      </div>
+    );
   } else {
     return null;
   }
