@@ -33,9 +33,11 @@ export default function Dictionary() {
     // when form submitted, search function is called
     // when input is changed updateKeyword is called
     <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="text" onChange={updateKeyword}></input>
-      </form>
+      <section>
+        <form onSubmit={search}>
+          <input type="text" onChange={updateKeyword}></input>
+        </form>
+      </section>
       <Results results={result}></Results>
     </div>
   );

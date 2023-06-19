@@ -5,10 +5,9 @@ import Dictionary from "./Dictionary";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="header">
-        <img src={logo} className="logo" alt="logo" />
-        <img src={logo2} className="logo" alt="logo" />
+        <img src={logo2} className="computer-image" alt="computer image" />
       </header>
       <main>
         <Dictionary></Dictionary>

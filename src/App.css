@@ -1,14 +1,53 @@
+body {
+  background-image: url("./abstract-colorful-galaxy-digital-painting-background_743855-4.avif.avif.avif");
+  font-family: sans-serif;
+  padding: 20px;
+}
+
 .header {
   margin: 20px 0;
 }
-.logo {
-  max-width: 400px;
+.computer-image {
+  max-width: 300px;
   display: block;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 .footer {
   text-align: center;
   font-size: 15px;
   margin: 30px 0;
+  background: #fbe3c1;
+  color: #08044c;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Dictionary input {
+  width: 70%;
+  padding: 7px 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+section {
+  background: #08044c;
+  color: #fbe3c1;
+  max-width: 550px;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.PartOfSpeech {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 15px;
+  font-style: italic;
+  color: #5c97b5;
 }
