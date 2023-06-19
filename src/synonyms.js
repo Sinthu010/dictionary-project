@@ -1,9 +1,7 @@
-import React from "react";
-
-export default function synonyms(props) {
+export default function Synonyms(props) {
   if (props.synonyms) {
     const synonymList = props.synonyms.join(", ");
-    return <div>Synonyms: {synonymList}</div>;
+    return `Synonyms: ${synonymList}`;
   } else {
     return null;
   }

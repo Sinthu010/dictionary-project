@@ -1,7 +1,7 @@
 import React from "react";
 import Synonyms from "./synonyms.js";
-import "./App.css";
 import Example from "./example.js";
+import "./App.css";
 
 export default function Meaning(props) {
   return (
