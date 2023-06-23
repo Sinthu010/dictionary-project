@@ -9,7 +9,7 @@ function App() {
         <img src={logo2} className="computer-image" alt="computer" />
       </header>
       <main>
-        <Dictionary></Dictionary>
+        <Dictionary defaultKeyword="hello"></Dictionary>
       </main>
       <footer className="footer"> Coded by @sinthu_codes </footer>
     </div>

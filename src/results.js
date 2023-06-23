@@ -19,6 +19,6 @@ export default function Results(props) {
       </div>
     );
   } else {
-    return <div> No results found </div>;
+    return null;
   }
 }
