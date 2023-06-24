@@ -10,8 +10,12 @@ export default function Dictionary(props) {
   let [result, setResult] = useState(null);
   let [loaded, setLoaded] = useState(false);
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     setResult(response.data);
+  }
+
+  function handlePexelsResponse(response) {
+    console.log(response.data);
   }
 
   function search() {
@@ -20,7 +24,13 @@ export default function Dictionary(props) {
     // handleResponse is passed as the callback function to be executed when the response is received
     let apiKey = "2abt2f6340do47141b6f92d3a14301be";
     let apiURL = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-    axios.get(apiURL).then(handleResponse);
+    axios.get(apiURL).then(handleDictionaryResponse);
+
+    let pexelsApiKey =
+      "NuV6hakut94cbNh4ieYn7JszJTwF5eA6pYUPWrczGguIfTJ5vtTJo3Vv";
+    let pexelsApiURL = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    let headers = { Authorization: `Bearer ${pexelsApiKey}` };
+    axios.get(pexelsApiURL, { headers: headers }).then(handlePexelsResponse);
   }
 
   function handleSubmit(event) {
