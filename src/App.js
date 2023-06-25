@@ -13,7 +13,15 @@ function App() {
       </main>
       <footer className="footer">
         {" "}
-        Coded by @sinthu_codes and is{" "}
+        Coded by{" "}
+        <a
+          href="https://www.instagram.com/sinthu_codes/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+        >
+          @sinthu_codes
+        </a>{" "}
+        and is{" "}
         <a
           href="https://github.com/Sinthu010/dictionary-project"
           target="_blank"
