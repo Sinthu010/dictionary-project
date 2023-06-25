@@ -11,6 +11,11 @@ export default function Dictionary(props) {
   let [result, setResult] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
+  let [error, setError] = useState(null);
+
+  function handleError(error) {
+    setError("Error getting word info");
+  }
 
   function handleDictionaryResponse(response) {
     setResult(response.data);
@@ -26,7 +31,7 @@ export default function Dictionary(props) {
     // handleResponse is passed as the callback function to be executed when the response is received
     let apiKey = "2abt2f6340do47141b6f92d3a14301be";
     let apiURL = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
-    axios.get(apiURL).then(handleDictionaryResponse);
+    axios.get(apiURL).then(handleDictionaryResponse).catch(handleError);
 
     let imagesApiKey = "2abt2f6340do47141b6f92d3a14301be";
     let imagesApiURL = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${imagesApiKey}`;
