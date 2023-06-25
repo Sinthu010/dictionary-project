@@ -11,7 +11,17 @@ function App() {
       <main>
         <Dictionary defaultKeyword="hello"></Dictionary>
       </main>
-      <footer className="footer"> Coded by @sinthu_codes </footer>
+      <footer className="footer">
+        {" "}
+        Coded by @sinthu_codes and is{" "}
+        <a
+          href="https://github.com/Sinthu010/dictionary-project"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-sourced on GitHub
+        </a>
+      </footer>
     </div>
   );
 }
